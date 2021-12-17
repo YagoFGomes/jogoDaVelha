@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <div class="board">
+        <h1>Jogo da velha</h1>
+        <div class='table'>
+            <div class="colunm">
+                <div class="squad" id='1' onclick="buttonClicked(this.id)">-</div>
+                <div class="squad" id='4' onclick="buttonClicked(this.id)">-</div>
+                <div class="squad" id='7' onclick="buttonClicked(this.id)">-</div>
+            </div>
+            <div class="colunm">
+                <div class="squad" id='2' onclick="buttonClicked(this.id)">-</div>
+                <div class="squad" id='5' onclick="buttonClicked(this.id)">-</div>
+                <div class="squad" id='8' onclick="buttonClicked(this.id)">-</div>
+            </div>
+            <div class="colunm">
+                <div class="squad" id='3' onclick="buttonClicked(this.id)">-</div>
+                <div class="squad" id='6' onclick="buttonClicked(this.id)">-</div>
+                <div class="squad" id='9' onclick="buttonClicked(this.id)">-</div>
+            </div>       
+        </div>
+        <div>
+            <label class='jogador'>Jogador:</label>
+            <label  class='jogador' id='jogadorSelecionado'>s</label>
+        </div>
+        <div>
+            <label class='vencedor'>Vencedor:</label>
+            <label class='vencedor' id='vencedor'></label>
+        </div>
+        <div>
+            <button onclick="reiniciar()">Reiniciar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

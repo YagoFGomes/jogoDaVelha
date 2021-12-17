@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.board{
+    text-align: center;
+}
+.squad{
+    text-align: center;
+    width: 50px;
+    background: #eee;
+    display: block;
+    padding: 40px;
+    font-size: 60px;
+    margin: 5px;
+    cursor:pointer;
+    color:#eee;
+}
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jogador, .vencedor{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button{
+    height: 50px;
+    width: 100px;
+    margin-top: 10px;
+}
