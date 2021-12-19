@@ -2,6 +2,9 @@ var jogador = null
 var jogadorSelecionado = document.getElementById("jogadorSelecionado")
 var vencedorSelecionado = document.getElementById("vencedor")
 
+var placarX = 0
+var placarO = 0
+
 mudarJogador('X')
 
 function buttonClicked(id){
@@ -92,6 +95,7 @@ function mudaCorQuadrado(quadrados1,quadrados2,quadrados3){
 function mudarVencedor(quadrado){
     vencedor = quadrado.innerHTML
     vencedorSelecionado.innerHTML = vencedor 
+    incrementaVencedor(vencedor)
 }
 function checkSequencia(quadrado1,quadrado2,quadrado3){
     var eigual = false;
@@ -113,4 +117,25 @@ function reiniciar(){
         quadrado.innerHTML = '-'
 
     }
+}
+
+var placarX = 0
+var placarO = 0
+
+function incrementaVencedor(vencedor){
+    console.log(vencedor)
+    if(vencedor == 'X'){
+        placarX++       
+    }
+    else{
+        placarO++
+    }
+
+    var placar = document.getElementById('placarFinal')
+
+    placar.innerHTML = `
+        Placar atual<br>
+        X = ${placarX} <br>
+        O = ${placarO}
+        `
 }
